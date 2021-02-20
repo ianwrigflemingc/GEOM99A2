@@ -45,7 +45,7 @@
           esriConfig.apiKey = "AAPK64693d87fed543a8a1bc8e922c7c0928fnHr8uLnTlONTi0jh71Z70ZZ2hsTZq9zMYHEjZ5W7B9gpO-75LUJmAjugC9PqgWO";
   
           const map = new Map({
-            basemap: "arcgis-navigation"
+            basemap: "arcgis-streets"
           });
   
           const view = new MapView({
@@ -60,17 +60,17 @@
             graphic: new Graphic({
               symbol: {
                 type: "simple-marker",
-                size: "12px",
-                color: "green",
+                size: "20px",
+                color: "red",
                 outline: {
                   color: "#efefef",
-                  width: "1.5px"
+                  width: "2.5px"
                 }
               }
             }),
             useHeadingEnabled: false
           });
-          view.ui.add(track, "top-left");
+          view.ui.add(track, "top-right");
   
         });
       </script>
